@@ -18,7 +18,7 @@ public class loading_screen extends AppCompatActivity {
             @Override
             public void run() {
                 try{
-                    sleep(2000);
+                    sleep(500);
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {
