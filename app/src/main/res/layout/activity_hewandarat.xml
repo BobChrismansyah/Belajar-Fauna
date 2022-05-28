@@ -16,50 +16,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-            <androidx.cardview.widget.CardView
-                android:layout_marginTop="20dp"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tekshewandarat1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="Gajah" />
-
-                <ImageView
-                    android:id="@+id/hewandarat1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/darat" />
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="Gajah" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/hewandarat2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/darat" />
+                    <ImageView
+                        android:id="@+id/hewandarat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        tools:srcCompat="@drawable/monyet" />
+
+                    <TextView
+                        android:id="@+id/tekshewandarat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:text="Gajah"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
