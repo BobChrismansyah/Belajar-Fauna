@@ -21,22 +21,31 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat1"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="Gajah" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/hewandarat1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/darat" />
+                    <ImageView
+                        android:id="@+id/hewandarat2"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/kucing" />
+
+                    <TextView
+                        android:id="@+id/tekshewandarat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Gajah"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -44,22 +53,31 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="Gajah" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/hewandarat2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/darat" />
+                    <ImageView
+                        android:id="@+id/hewandarat3"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/merpati" />
+
+                    <TextView
+                        android:id="@+id/tekshewandarat3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Merpati"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -67,33 +85,67 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat3"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="Gajah" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/hewandarat3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/darat" />
+                    <ImageView
+                        android:id="@+id/hewandarat4"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/kucing" />
+
+                    <TextView
+                        android:id="@+id/tekshewandarat4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Gajah"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
+                    <ImageView
+                        android:id="@+id/hewandarat5"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/kucing" />
 
+                    <TextView
+                        android:id="@+id/tekshewandarat5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Gajah"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
 
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
 
         </LinearLayout>
-
-
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

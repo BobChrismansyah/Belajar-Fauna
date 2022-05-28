@@ -15,27 +15,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
+
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat1"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="hewanamphibi" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/hewandarat1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/hewanamphibi" />
+                    <ImageView
+                        android:id="@+id/hewanamphibi1"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/katak" />
+
+                    <TextView
+                        android:id="@+id/tekshewanamphibi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Katak"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -43,22 +53,31 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="hewanamphibi" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/hewandarat2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/hewanamphibi" />
+                    <ImageView
+                        android:id="@+id/hewanamphibi2"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/katak" />
+
+                    <TextView
+                        android:id="@+id/tekshewanamphibi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hiu"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -66,30 +85,128 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tekshewandarat3"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="33dp"
-                    android:textSize="30dp"
-                    android:text="hewanamphibi" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/hewandarat3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@drawable/hewanamphibi" />
+                    <ImageView
+                        android:id="@+id/hewanamphibi3"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/katak" />
+
+                    <TextView
+                        android:id="@+id/tekshewanamphibi3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hiu"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
+                    <ImageView
+                        android:id="@+id/hewanamphibi4"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/katak" />
 
+                    <TextView
+                        android:id="@+id/tekshewanamphibi4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hiu"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
 
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/hewanamphibi5"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/katak" />
+
+                    <TextView
+                        android:id="@+id/tekshewanamphibi5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hiu"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/hewanamphibi6"
+                        android:layout_width="289dp"
+                        android:layout_height="213dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/katak" />
+
+                    <TextView
+                        android:id="@+id/tekshewanamphibi6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hiu"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 

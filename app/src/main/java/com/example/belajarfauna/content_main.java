@@ -21,7 +21,7 @@ public class content_main extends AppCompatActivity {
         air = (CardView) findViewById(R.id.content_air);
         amphibi = (CardView) findViewById(R.id.content_amphibi);
 
-        //dari gambar jadi bisa masuk ke activity hewandarat.xml
+
         darat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
