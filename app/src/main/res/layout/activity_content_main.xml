@@ -28,7 +28,7 @@
         android:padding="7dp">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/darat"
+            android:id="@+id/content_darat"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_margin="1dp">
@@ -59,7 +59,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/air"
+            android:id="@+id/content_air"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_margin="1dp">
@@ -90,7 +90,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/amphibi"
+            android:id="@+id/content_amphibi"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_margin="1dp">
