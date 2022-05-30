@@ -90,6 +90,11 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="katak">Kodok dan katak hidup menyebar luas, terutama di daerah tropis yang berhawa panas. Makin dingin tempatnya, seperti di atas gunung atau di daerah bermusim empat. Kodok memangsa berbagai jenis serangga yang ditemuinya. Kodok kerap ditemui berkerumun di bawah cahaya lampu jalan atau taman, menangkapi serangga-serangga yang tertarik oleh cahaya lampu tersebut.</string>
+    <string name="lumba_lumba">Lumba-lumba hidup dan bekerja dalam kelompok atau disebut kawanan. Mereka sering bermain bersama. Seekor lumba-lumba tidak bisa tidur nyenyak di bawah air. Ia bisa tenggelam. Oleh karena itu, ia setengah tidur beberapa saat dalam sehari. Lumba-lumba makan cumi dan ikan seperti ikan mullet abu-abu. </string>
+    <string name="ayam">Ayam merupakan hewan yang tergolong dalam kategori omnivora yang memakan biji bijian, buah buahan, dan serangga. Ayam sangat senang hidup berombong rombongan. Hewan unggas ini sering menjadi mangsa predator seperti kawanan rubah dan rakun.</string>
+    <string name="western">Dengan paruh runcing dan tajam, burung ini memiliki punggung dan sayap berwarna coklat atau abu-abu berbintik-bintik, dan garis-garis hitam dan putih di kepalanya. Namun, bagian paling khas dari burung-burung ini adalah tanda berbentuk V yang tebal di dada mereka.</string>
+    <string name="macantutul">Macan tutul jawa berukuran paling kecil, dan mempunyai indra penglihatan dan penciuman yang tajam, memiliki bulu seperti warna sayap kumbang yang hitam mengilap, dengan bintik-bintik gelap berbentuk kembangan yang hanya terlihat di bawah cahaya terang.</string>
     <string name="penjelasanhiu">Hiu mempunyai tubuh yang dilapisi kulit dermal denticles untuk melindungi kulit mereka dari kerusakan, dari parasit, dan untuk menambah dinamika air. Mereka mempunyai beberapa deret gigi yang dapat digantikan.</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_hewanair">hewanair</string>

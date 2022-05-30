@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".hewanair"
     android:background="@drawable/img">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
@@ -21,8 +22,8 @@
 
             <LinearLayout
                 android:id="@+id/layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -33,17 +34,19 @@
                     android:src="@drawable/ikan_hiu" />
 
                 <LinearLayout
-                    android:layout_width="382dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="20dp"
-                        android:text="Penjelasan Panjang"
-                        android:textSize="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/penjelasanhiu"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -53,6 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="430dp"
+                    android:justificationMode="inter_word"
                     android:text="@string/penjelasanhiu"
                     android:visibility="gone"
                     android:textSize="27dp" />
@@ -69,14 +73,14 @@
                             android:textStyle="bold" />
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/sound"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginRight="14dp"
-                android:layout_marginBottom="14dp"
-                android:src="@drawable/ic_baseline_campaign_24" />
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/sound"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom|end"-->
+<!--                android:layout_marginRight="14dp"-->
+<!--                android:layout_marginBottom="14dp"-->
+<!--                android:src="@drawable/ic_baseline_campaign_24" />-->
             <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
             <!--                android:id="@+id/detail"-->
             <!--                android:onClick="expand"-->
@@ -110,10 +114,10 @@
                     android:layout_width="388dp"
                     android:layout_height="321dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/ikan_hiu" />
+                    android:src="@drawable/lumba_lumba" />
 
                 <LinearLayout
-                    android:layout_width="382dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30dp"
                     android:orientation="horizontal">
@@ -122,8 +126,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:text="Penjelasan Panjang"
-                        android:textSize="30dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/lumba_lumba"
+                        android:textSize="21dp"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -133,110 +139,30 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="430dp"
-                    android:text="@string/penjelasanhiu"
+                    android:text="s"
                     android:visibility="gone"
                     android:textSize="27dp" />
             </LinearLayout>
 
-            <!--            <TextView-->
-            <!--                android:id="@+id/tekshewanair2"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginLeft="300dp"-->
-            <!--                android:text="Hiu"-->
-            <!--                android:textColor="@color/black"-->
-            <!--                android:textSize="80dp"-->
-            <!--                android:textStyle="bold" />-->
-
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/sound2"
+            <TextView
+                android:id="@+id/tekshewanair"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginRight="14dp"
-                android:layout_marginBottom="14dp"
-                android:src="@drawable/ic_baseline_campaign_24" />
+                android:layout_marginLeft="30dp"
+                android:text="Lumba-lumba"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
             <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-            <!--                android:id="@+id/detail"-->
-            <!--                android:onClick="expand"-->
+            <!--                android:id="@+id/sound"-->
             <!--                android:layout_width="wrap_content"-->
             <!--                android:layout_height="wrap_content"-->
             <!--                android:layout_gravity="bottom|end"-->
-            <!--                app:fabSize="mini"-->
-            <!--                android:layout_marginRight="84dp"-->
+            <!--                android:layout_marginRight="14dp"-->
             <!--                android:layout_marginBottom="14dp"-->
-            <!--                android:src="@drawable/ic_round_format_list_bulleted_24" />-->
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:cardBackgroundColor="#27000000"
-            app:cardCornerRadius="40dp">
-
-            <LinearLayout
-                android:id="@+id/layout3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/hewanair3"
-                    android:layout_width="388dp"
-                    android:layout_height="321dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/ikan_hiu" />
-
-                <LinearLayout
-                    android:layout_width="382dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Penjelasan Panjang"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-                <TextView
-                    android:id="@+id/details3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="430dp"
-                    android:text="@string/penjelasanhiu"
-                    android:visibility="gone"
-                    android:textSize="27dp" />
-            </LinearLayout>
-
-            <!--            <TextView-->
-            <!--                android:id="@+id/tekshewanair2"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginLeft="300dp"-->
-            <!--                android:text="Hiu"-->
-            <!--                android:textColor="@color/black"-->
-            <!--                android:textSize="80dp"-->
-            <!--                android:textStyle="bold" />-->
-
-
-            <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-            <!--            android:id="@+id/sound3"-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:layout_gravity="bottom|end"-->
-            <!--            android:layout_marginRight="14dp"-->
-            <!--            android:layout_marginBottom="14dp"-->
-            <!--            android:src="@drawable/ic_baseline_campaign_24" />-->
+            <!--                android:src="@drawable/ic_baseline_campaign_24" />-->
             <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
             <!--                android:id="@+id/detail"-->
             <!--                android:onClick="expand"-->
@@ -251,13 +177,5 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
 
 </ScrollView>
