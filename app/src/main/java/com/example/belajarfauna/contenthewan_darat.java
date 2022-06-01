@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class contenthewan_darat extends AppCompatActivity {
-    MediaPlayer leopard, western, manuk;
+      MediaPlayer leopard, western, manuk;
 //    TextView detailsText;
 //    LinearLayout layout;
 
@@ -25,6 +25,9 @@ public class contenthewan_darat extends AppCompatActivity {
 //        layout = findViewById(R.id.layout2);
 //        layout.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
+
+
+        //untuk suara
         leopard=MediaPlayer.create(contenthewan_darat.this,R.raw.leopard);
         western=MediaPlayer.create(contenthewan_darat.this,R.raw.western_meadowlark);
         manuk=MediaPlayer.create(contenthewan_darat.this,R.raw.chicken);
@@ -36,7 +39,7 @@ public class contenthewan_darat extends AppCompatActivity {
 //        detailsText.setVisibility(v);
 //    }
 
-
+ //memutar suara
     public void playIT(View v){
         leopard.start();
     }

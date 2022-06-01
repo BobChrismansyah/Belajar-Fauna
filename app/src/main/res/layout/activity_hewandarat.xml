@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <androidx.cardview.widget.CardView
-            android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
@@ -74,16 +73,16 @@
                 android:layout_marginBottom="11dp"
                 android:text="suara"
                 android:src="@drawable/ic_baseline_campaign_24" />
-            <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-            <!--                android:id="@+id/detail"-->
-            <!--                android:onClick="expand"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_gravity="bottom|end"-->
-            <!--                app:fabSize="mini"-->
-            <!--                android:layout_marginRight="84dp"-->
-            <!--                android:layout_marginBottom="14dp"-->
-            <!--                android:src="@drawable/ic_round_format_list_bulleted_24" />-->
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/detail"
+                            android:onClick="expand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            app:fabSize="mini"
+                            android:layout_marginRight="84dp"
+                            android:layout_marginBottom="14dp"
+                            android:src="@drawable/ic_round_format_list_bulleted_24" />
 
         </androidx.cardview.widget.CardView>
 
