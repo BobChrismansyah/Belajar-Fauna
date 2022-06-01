@@ -11,88 +11,306 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/card"
+            android:id="@+id/base_cardview"
+            style="@style/Base.CardView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:cardBackgroundColor="#27000000"
-            app:cardCornerRadius="40dp">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#4B000000">
 
-            <LinearLayout
-                android:id="@+id/layoutamphibi"
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.511"
+                tools:layout_editor_absoluteX="-55dp">
 
-                <ImageView
-                    android:id="@+id/content_amphibi"
-                    android:layout_width="388dp"
-                    android:layout_height="321dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/katak" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="28dp"
-                    android:layout_marginLeft="30dp"
-                    android:orientation="horizontal">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fixed_layout"
+                    android:layout_width="817dp"
+                    android:layout_height="342dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="393dp"
+                        android:layout_height="313dp"
+                        android:src="@drawable/katak"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                        app:layout_constraintEnd_toEndOf="@+id/fixed_layout"
+                        app:layout_constraintHorizontal_bias="0.033"
+                        app:layout_constraintStart_toStartOf="@+id/fixed_layout"
+                        app:layout_constraintTop_toTopOf="@+id/fixed_layout" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:id="@+id/heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Katak"
+                        android:textColor="#006600"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                        app:layout_constraintEnd_toEndOf="@+id/fixed_layout"
+                        app:layout_constraintHorizontal_bias="0.594"
+                        app:layout_constraintStart_toStartOf="@+id/fixed_layout"
+                        app:layout_constraintTop_toTopOf="@+id/fixed_layout"
+                        app:layout_constraintVertical_bias="0.047" />
+
+                    <TextView
+                        android:id="@+id/list_of_subjects"
+                        android:layout_width="343dp"
+                        android:layout_height="235dp"
                         android:layout_marginTop="20dp"
+                        android:layout_marginBottom="58dp"
                         android:justificationMode="inter_word"
                         android:text="@string/katak"
                         android:textColor="@color/black"
-                        android:textSize="21dp"
-                        android:textStyle="bold" />
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                        app:layout_constraintStart_toStartOf="@id/heading"
+                        app:layout_constraintTop_toBottomOf="@+id/heading"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/arrow_button"
+                        android:layout_width="43dp"
+                        android:layout_height="44dp"
+                        android:background="@color/black"
+                        android:src="@drawable/ic_baseline_expand_more_24"
+                        app:layout_constraintBottom_toBottomOf="@id/fixed_layout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.952"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/list_of_subjects"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/suarakatak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="playkatak"
+                        android:src="@drawable/ic_baseline_campaign_24"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@id/fixed_layout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.869"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/list_of_subjects"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/hidden_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fixed_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="410dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/katak2"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="314dp"
+                            android:layout_height="240dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/kodok" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tekshewanair2"
-                android:layout_width="wrap_content"
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/base_cardview2"
+            style="@style/Base.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#4B000000">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="Katak"
-                android:textColor="@color/white"
-                android:textSize="40dp"
-                android:textStyle="bold" />
+                app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.511"
+                tools:layout_editor_absoluteX="-55dp">
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fixed_layout2"
+                    android:layout_width="810dp"
+                    android:layout_height="330dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:onClick="katak"
-                android:id="@+id/suaraleopard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="11dp"
-                android:text="suara"
-                android:src="@drawable/ic_baseline_campaign_24" />
-            <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-            <!--                android:id="@+id/detail"-->
-            <!--                android:onClick="expand"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_gravity="bottom|end"-->
-            <!--                app:fabSize="mini"-->
-            <!--                android:layout_marginRight="84dp"-->
-            <!--                android:layout_marginBottom="14dp"-->
-            <!--                android:src="@drawable/ic_round_format_list_bulleted_24" />-->
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="393dp"
+                        android:layout_height="313dp"
+                        android:src="@drawable/buaya"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixed_layout2"
+                        app:layout_constraintEnd_toEndOf="@+id/fixed_layout2"
+                        app:layout_constraintHorizontal_bias="0.033"
+                        app:layout_constraintStart_toStartOf="@+id/fixed_layout2"
+                        app:layout_constraintTop_toTopOf="@+id/fixed_layout2" />
 
+                    <TextView
+                        android:id="@+id/heading2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buaya"
+                        android:textColor="#006600"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixed_layout2"
+                        app:layout_constraintEnd_toEndOf="@+id/fixed_layout2"
+                        app:layout_constraintHorizontal_bias="0.597"
+                        app:layout_constraintStart_toStartOf="@+id/fixed_layout2"
+                        app:layout_constraintTop_toTopOf="@+id/fixed_layout2"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/list_of_subjects2"
+                        android:layout_width="349dp"
+                        android:layout_height="199dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="58dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/penjelasanbuaya"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/fixed_layout2"
+                        app:layout_constraintStart_toStartOf="@id/heading2"
+                        app:layout_constraintTop_toBottomOf="@+id/heading2"
+                        app:layout_constraintVertical_bias="0.065" />
+
+                    <ImageButton
+                        android:id="@+id/arrow_button2"
+                        android:layout_width="43dp"
+                        android:layout_height="44dp"
+                        android:background="@color/black"
+                        android:src="@drawable/ic_baseline_expand_more_24"
+                        app:layout_constraintBottom_toBottomOf="@id/fixed_layout2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.959"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/list_of_subjects2"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/suarabuaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="playbuaya"
+                        android:src="@drawable/ic_baseline_campaign_24"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@id/fixed_layout2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.876"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/list_of_subjects2"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/hidden_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fixed_layout2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="410dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/penjelasanbuaya2"
+                            android:textColor="#000000"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="336dp"
+                            android:layout_height="307dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/krokodil" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
 
 
 
 
-    </LinearLayout>
 
+
+
+    </LinearLayout>
 
 
 </ScrollView>
